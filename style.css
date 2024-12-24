@@ -1,0 +1,363 @@
+@font-face {
+  font-family: 'FC Fragment';
+  src: url('./front/FCIgloo.ttf') format('truetype'); /* เชื่อมโยงไฟล์ฟอนต์ */
+}
+
+
+
+.button-green {
+  background-color: #4CAF48;
+  /* สีพื้นหลัง */
+  color: white;
+  /* สีข้อความ */
+  border: none;
+  /* ลบเส้นขอบ */
+  padding: 5px 10px;
+  /* ระยะห่างภายใน */
+  text-align: center;
+  /* จัดข้อความให้อยู่กึ่งกลาง */
+  font-size: 16px;
+  /* ขนาดข้อความ */
+  border-radius: 5px;
+  /* มุมมน */
+  cursor: pointer;
+  /* เปลี่ยนรูปแบบเมาส์ */
+  margin-top: 10px;
+}
+
+.button-green:hover {
+  background-color: #044e08;
+  /* สีเมื่อเอาเมาส์ชี้ */
+}
+
+.button-red {
+  background-color: #cf170a;
+  /* สีพื้นหลัง */
+  color: white;
+  /* สีข้อความ */
+  border: none;
+  /* ลบเส้นขอบ */
+  padding: 5px 10px;
+  /* ระยะห่างภายใน */
+  text-align: center;
+  /* จัดข้อความให้อยู่กึ่งกลาง */
+  font-size: 16px;
+  /* ขนาดข้อความ */
+  border-radius: 5px;
+  /* มุมมน */
+  cursor: pointer;
+  /* เปลี่ยนรูปแบบเมาส์ */
+  margin-top: 10px;
+}
+
+.button-red:hover {
+  background-color: #740202;
+  /* สีเมื่อเอาเมาส์ชี้ */
+}
+
+
+.button-blue {
+  background-color: #0a70cf;
+  /* สีพื้นหลัง */
+  color: white;
+  /* สีข้อความ */
+  border: none;
+  /* ลบเส้นขอบ */
+  padding: 10px 20px;
+  /* ระยะห่างภายใน */
+  text-align: center;
+  /* จัดข้อความให้อยู่กึ่งกลาง */
+  font-size: 16px;
+  /* ขนาดข้อความ */
+  border-radius: 5px;
+  /* มุมมน */
+  cursor: pointer;
+  /* เปลี่ยนรูปแบบเมาส์ */
+}
+
+.button-blue:hover {
+  background-color: #021d36;
+  /* สีเมื่อเอาเมาส์ชี้ */
+}
+
+#output {
+  background-color: #ffffff;
+  color: rgb(0, 231, 50);
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* main bg  */
+
+body {
+  font-family: 'FC Fragment', sans-serif; 
+  background-color: #a4a5a5;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.container-ABCD {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+h1 {
+  color: #333;
+}
+
+
+
+.number-display {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0 10px;
+}
+
+
+.container-head {
+  width: 100%;
+  height: 100%;
+  /* กำหนดความสูง */
+  background: linear-gradient(to top, #f5edc9, #f8ef71);
+  /* ไล่สีจากซ้ายไปขวา */
+  text-align: left;
+  color: white;
+  padding: 20px;
+}
+
+
+.container-slot {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  /* จัดตำแหน่งตัวเลขให้เรียงกันในแนวนอน */
+  align-items: center;
+  /* จัดแนวกลางตามแนวตั้ง */
+}
+
+.container-slotIn {
+  display: flex;
+  justify-content: center;
+  /* จัดตำแหน่งตัวเลขให้เรียงกันในแนวนอน */
+  align-items: center;
+  /* จัดแนวกลางตามแนวตั้ง */
+}
+
+
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.button-4 {
+  appearance: none;
+  background-color: #ff0000;
+  /* changed to red */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-4:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-4:hover {
+  background-color: #ff3737;
+  /* changed to a darker red */
+}
+
+.button-4:focus {
+  box-shadow: rgba(255, 0, 0, .4) 0 0 0 3px;
+  /* changed to red */
+  outline: none;
+}
+
+.button-4:disabled {
+  background-color: #ffcccc;
+  /* changed to a lighter red */
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #ff0000;
+  /* changed to red */
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.button-5 {
+  appearance: none;
+  background-color: #007bff;
+  /* changed to blue */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-5:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-5:hover {
+  background-color: #0069d9;
+  /* changed to a darker blue */
+}
+
+.button-5:focus {
+  box-shadow: rgba(0, 123, 255, .4) 0 0 0 3px;
+  /* changed to blue */
+  outline: none;
+}
+
+.button-5:disabled {
+  background-color: #66d9ef;
+  /* changed to a lighter blue */
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-5:active {
+  background-color: #0056b3;
+  /* changed to a darker blue */
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.header {
+  background-color: rgb(253, 223, 51); /* สีพื้นหลังสีทอง */
+  color: white; /* สีตัวอักษร */
+  padding: 15px 20px; /* ระยะห่างด้านใน */
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* แบ่งพื้นที่ระหว่างไอเท็ม */
+  align-items: center; /* จัดแนวกลางในแนวตั้ง */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เงา */
+
+}
+
+/* สไตล์โลโก้ */
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* สไตล์เมนู */
+.header .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.header .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.header .menu a:hover {
+  color: black; /* เปลี่ยนสีเมื่อวางเมาส์ */
+}
+

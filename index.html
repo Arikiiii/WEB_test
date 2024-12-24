@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariki888</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Ariki888</h1>
+    </div>
+
+    <div class="container-ABCD">
+        <h2>เกมทายอักษร A B C D </h2>
+        <p id="output">Press Start to begin the game.</p>
+        
+        <div>
+            <button class="button-5" onclick="GetAnswer('A')">A</button>
+            <button class="button-5" onclick="GetAnswer('B')">B</button>
+            <button class="button-5" onclick="GetAnswer('C')">C</button>
+            <button class="button-5" onclick="GetAnswer('D')">D</button>
+        </div>
+        <br>
+        <div>
+            <button class="button-3" onclick="StartGame(true)">Start</button>
+            <button class="button-4" onclick="StartGame(false)">Stop</button>
+        </div>
+    </div>
+
+
+
+    <div class="container-slot">
+        <h1>สุ่มเลข</h1>  
+        <p id="output">Seclet your answer (low , high)</p>
+        <div >
+            <div id="h1" class =" button-5 " onclick="HightLow(true)">HIGH</div>
+            <div id ="l1" class =" button-5 " onclick="HightLow(false)">LOW</div>
+        </div>
+        <div class="container-slotIn">
+            <div id="number-display1" class="number-display">0</div>
+            <div id="number-display2" class="number-display">0</div>
+            <div id="number-display3" class="number-display">0</div>
+        </div>
+       
+       
+    </div>
+
+   <script src="./hx.js"></script>
+   <script src="./ืnum.js"></script>
+</body>
+</html>
